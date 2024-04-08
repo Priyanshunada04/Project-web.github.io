@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/style2.css"> 
+</head>
+<body background="images/img6.jpeg">
+
+    <center>
+    <form action="">
+        <table class="to" border="1" height="500" width="500" >
+            <tr>
+                <td> Full Name: </td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td> Birthdate: </td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td> Email: </td>
+                <td><input type="email"></td>
+            </tr>
+
+            <tr>
+                <td> Password: </td>
+                <td><input type="password"></td>
+            </tr>  
+        </table>
+        
+    </form>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="images/404-tick.png">
+            <h2>Thank You</h2>
+            <p>Your deatails have been submitted succesfully. Thanks!</p>
+            <button type="submit" class="btn" onclick="closePopup()">Okay</button>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+                popup.classList.add("open-popup")
+        }
+        function closePopup(){
+                popup.classList.remove("open-popup")
+        }
+    
+    </script>
+    <h2><a href="index.html"> Back to home</a></h2>
+    
+</center>
+</body>
+</html>
